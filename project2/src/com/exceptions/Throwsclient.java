@@ -14,10 +14,24 @@ class Mybank{
 	}
 }
 public class Throwsclient {
+    public static void main(String[] args) {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+        System.out.println("welcome");
 
-	}
+        Mybank b=new Mybank();
+
+        try{
+    b.withdraw(2000);
+
+        }
+catch(Exception e){
+
+                e.printStackTrace();
+
+        }
+
+System.out.println("completed");
+
+}
 
 }
