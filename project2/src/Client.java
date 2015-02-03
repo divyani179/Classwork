@@ -33,8 +33,7 @@ try{
 	System.out.println("in atm");
 	int val=Integer.parseInt(args[0]);
 	System.out.println("value given");
-	Userbank ex=new Userbank();
-	ex.withdraw(val);
+
 	System.out.println("amount withdrawn successfully!");
 	
 }catch(Exception e){
