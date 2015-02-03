@@ -1,6 +1,6 @@
 
 
-public class Userbank {
+ class Userbank{
 int bal=4000;
 void withdraw(int x) throws NBException,ODException,Exception{
 	int v=bal-x;
@@ -17,7 +17,7 @@ void withdraw(int x) throws NBException,ODException,Exception{
 			System.out.println("balance is"+bal);
 		}
 	}catch(Exception e){
-		System.out.println("caught exception"+e);
+		System.out.println("caught exception"+" "+e);
 		throw e;
 	}
 	finally{
@@ -25,6 +25,8 @@ void withdraw(int x) throws NBException,ODException,Exception{
 	}
 	System.out.println("in main");
 }
+}
+public class Client{
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 try{
