@@ -6,10 +6,10 @@ class Runthread implements Runnable{
 	String name;
 	public Runthread(Loan lo, int account, String name) {
 		
-		 lo= l;
+		 l=lo;
 		this.account = account;
 		this.name = name;
-		t=new Thread();
+		t=new Thread(this);
 		t.start();
 	}
 	@Override
